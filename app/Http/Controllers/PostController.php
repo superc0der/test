@@ -18,4 +18,15 @@ class PostController extends Controller
             'name' => 'Tite'
         ];
     }
+
+    public function deletePost($id)
+    {
+        $deleted = delete($id);
+
+        if (!$deleted) {
+            return false;
+        }
+
+        return true;
+    }
 }
