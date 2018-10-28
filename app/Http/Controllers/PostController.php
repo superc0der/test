@@ -1,6 +1,7 @@
 <?php
 
 namespace App\Http\Controllers;
+use App\Post;
 
 use Illuminate\Http\Request;
 
@@ -28,5 +29,12 @@ class PostController extends Controller
         }
 
         return true;
+    }
+
+    public function getAllPosts()
+    {
+        $model = Post::all();
+
+        return $model;
     }
 }
