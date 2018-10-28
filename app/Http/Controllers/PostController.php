@@ -10,4 +10,12 @@ class PostController extends Controller
     {
         // Create Post
     }
+
+    public function getPost()
+    {
+        return [
+            'id' => 1,
+            'name' => 'Tite'
+        ];
+    }
 }
