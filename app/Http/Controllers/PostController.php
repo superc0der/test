@@ -37,4 +37,9 @@ class PostController extends Controller
 
         return $model;
     }
+
+    public function suspendPost()
+    {
+        // Suspend Post
+    }
 }
