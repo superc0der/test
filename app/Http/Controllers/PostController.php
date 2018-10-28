@@ -18,4 +18,9 @@ class PostController extends Controller
             'name' => 'Tite'
         ];
     }
+
+    public function suspendPost()
+    {
+        // Suspend Post
+    }
 }
